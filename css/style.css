@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 2px solid black;
+  height: 70px;
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Jenna Sue", sans-serif;
+  float: left;
+  width: 30%;
+  margin-top: 20px;
+  padding-left: 25px;
+}
+
+.mainmenu {
+  float: right;
+  width: 70%;
+  text-align: right;
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+.mainmenu a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 24px;
+  padding: 20px;
+
+}
+
+.mainmenu div {
+  display: inline;
+  padding: 20px;
+}
+
+.language-select a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 24px;
+
+}
+
+.language-select li {
+  display: inline;
+}
+
+.language-select li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+}
+
+.info {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 5px;
+
+}
+
+.social-1 {
+  float: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 40%;
+}
+
+.social-1 a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.social-2 {
+  float: right;
+  width: 60%;
+  display: inline;
+  text-align: right;
+}
+
+.social-2 img {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 60px;
+}
+
+.logo {
+  clear: both;
+  height: 500px;
+  width: 960px;
+  background: #54C0B7;
+  margin: 10px auto;
+}
+
+  .logo img {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 0 auto;
+  }
+
+.feature {
+  height: 350px;
+  width: 960px;
+  margin: 10px auto;
+  border-bottom: 3px solid black;
+  background: url("../images/London.JPG");
+  background-size: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.feature a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 60px;
+  margin: 0 auto;
+
+}
+
+
+
+.section-1 {
+  height: 200px;
+  width: 960px;
+  margin: 20px auto;
+
+}
+
+.blogpost-1 {
+  float: left;
+  width: 33.333%;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 45px;
+
+}
+
+.blogpost-1:hover {
+  opacity: 0.5;
+}
+
+.postlink {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 60px;
+}
+
+
+#kenwood {
+   background: url("../images/KenwoodHouse1.jpg") center;
+ }
+
+#polpo {
+  background: url("../images/Polpo1.jpeg") center;
+}
+
+#rose {
+  background: url("../images/pantone.jpg") right;
+}
+
+
+
+.section-2 {
+  height: 200px;
+  width: 960px;
+  margin: 20px auto;
+
+}
+
+.blogpost-2 {
+  float: left;
+  width: 33.333%;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
+
+}
+
+.blogpost-2:hover {
+  opacity: 0.5;
+}
+
+#birthday {
+   background: url("../images/Birthday1.jpeg");
+ }
+
+#london {
+  background: url("../images/London.JPG")
+}
+
+#redhead {
+  background: url("../images/redhead.jpg")
+}
+
+
+
+footer {
+  background: black;
+  width: 960px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+footer p {
+  color: white;
+  font-family: "Jenna Sue", sans-serif;
+  text-align: left;
+  padding: 40px 20px;
+  font-size: 24px;
+}
