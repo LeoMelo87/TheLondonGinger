@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+/*********
+HOME PAGE
+**********/
+
 header {
   border-bottom: 2px solid black;
-  height: 70px;
-  width: 960px;
+  height: 80px;
+  width: 100%;
   margin: 0 auto;
+  background: white;
 }
 
 h1 {
@@ -18,12 +23,19 @@ h1 {
   padding-left: 25px;
 }
 
-.mainmenu {
+.mainmenu ul {
   float: right;
   width: 70%;
   text-align: right;
   margin-top: 40px;
   padding-left: 50px;
+}
+
+.mainmenu li {
+  display: inline;
+  margin-right: 20px;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 24px;
 }
 
 .mainmenu a {
@@ -36,68 +48,93 @@ h1 {
 
 }
 
-.mainmenu div {
-  display: inline;
-  padding: 20px;
+/*******************************************
+MAIN LOGO - CAROUSEL OF IMAGES
+*******************************************/
+
+.gallery-cell {
+  width: 100%;
+  height: 500px;
+  /*margin-top: 80px;*/
+  margin-right: 10px;
+  background: #54C0B7;
+  counter-increment: gallery-cell;
 }
 
-.language-select a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Jenna Sue", sans-serif;
-  font-size: 24px;
-
-}
-
-.language-select li {
-  display: inline;
-}
-
-.language-select li a {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Jenna Sue", sans-serif;
-}
-
-.info {
-  width: 960px;
+.gallery-cell .logo-front img {
+  max-width: 57%;
+  max-height: 57%;
+  display: block;
   margin: 0 auto;
-  padding-bottom: 30px;
-  padding-top: 5px;
+  }
 
+.main-title {
+  /*text-align: center;*/
+  margin-top: 100px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 
-.social-1 {
-  float: left;
-  padding-left: 20px;
-  padding-top: 10px;
-  width: 40%;
-}
-
-.social-1 a {
+.main-title a {
   color: black;
+  font-size: 100px;
+  font-family: "Jenna Sue", sans-serif;
+  text-decoration: none;
+  transition: all 3s ease-in;
+
+}
+
+.read-more-title .read-more-button {
+  display: block;
+  margin: 0 auto;
+  border: 2px black solid;
+  background: none;
+  height: 35px;
+  width: 120px;
+}
+
+.read-more-button a {
+  font-size: 18px;
+  color: black;
+  font-family: "Josefin Sans", cursive;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Jenna Sue", sans-serif;
-  font-size: 24px;
-  padding: 20px;
+
 }
 
-.social-2 {
-  float: right;
-  width: 60%;
-  display: inline;
-  text-align: right;
+
+
+#kenwood {
+  background: url("../images/KenwoodHouse1.jpg") center no-repeat;
+  background-size: 100%;
+
+ }
+
+#polpo {
+  background: url("../images/Polpo1.jpeg") center no-repeat;
+  background-size: 100%
 }
 
-.social-2 img {
-  height: 20px;
-  width: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 60px;
+#rose {
+  background: url("../images/pantone.jpg") center no-repeat;
+}
+
+#birthday {
+   background: url("../images/Birthday1.jpeg");
+   background-size: cover;
+ }
+
+#london {
+  background: url("../images/London.JPG") center no-repeat;
+  background-size: 100%;
+}
+
+#redhead {
+  background: url("../images/redhead.jpg")
 }
 
 .logo {
@@ -115,119 +152,524 @@ h1 {
   margin: 0 auto;
   }
 
-.feature {
-  height: 350px;
+
+/*********************
+FIRST SECTION OF POSTS
+**********************/
+
+.wrapper-main-page {
+  margin-top: 50px;
+}
+
+.section-blocks {
+  height: 400px;
   width: 960px;
-  margin: 10px auto;
-  border-bottom: 3px solid black;
-  background: url("../images/London.JPG");
-  background-size: 100%;
-  text-align: center;
-  padding-top: 100px;
-}
-
-.feature a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Jenna Sue", sans-serif;
-  font-size: 60px;
-  margin: 0 auto;
+  margin: 10px auto 5px auto;
 
 }
 
-
-
-.section-1 {
-  height: 200px;
-  width: 960px;
-  margin: 20px auto;
-
-}
-
-.blogpost-1 {
+.blogpost-box {
   float: left;
-  width: 33.333%;
-  height: 200px;
-  display: inline-block;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 45px;
-
+  width: 32%;
+  height: 300px;
+  margin-right: 2%;
+  /*padding: 15px;*/
 }
 
-.blogpost-1:hover {
-  opacity: 0.5;
+.blogpost-box:nth-of-type(3){
+  margin-right: 0px;
+}
+
+.blogpost-image {
+  clear: both;
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogpost-box .summary p {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", cursive;
+  font-size: 16px;
 }
 
 .postlink {
-  color: white;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Jenna Sue", sans-serif;
   font-size: 60px;
+  opacity: 0;
+}
+
+.blogpost-box:hover .postlink {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 60px;
+  opacity: 1;
 }
 
 
-#kenwood {
-   background: url("../images/KenwoodHouse1.jpg") center;
+#kenwood1 {
+  background: url("../images/KenwoodHouse1.jpg") center no-repeat;
  }
 
-#polpo {
-  background: url("../images/Polpo1.jpeg") center;
+#polpo1 {
+  background: url("../images/Polpo1.jpeg")
 }
 
-#rose {
-  background: url("../images/pantone.jpg") right;
+#rose1 {
+  background: url("../images/pantone.jpg")
 }
 
 
 
-.section-2 {
-  height: 200px;
+/*********************
+SECOND SECTION OF POSTS
+**********************/
+/*.section-2 {
+  height: 300px;
   width: 960px;
-  margin: 20px auto;
+  margin: 20px auto;*/
 
-}
+/*}*/
 
-.blogpost-2 {
-  float: left;
-  width: 33.333%;
-  height: 200px;
-  display: inline-block;
-  border: 1px solid black;
-
-}
-
-.blogpost-2:hover {
-  opacity: 0.5;
-}
-
-#birthday {
+#birthday1 {
    background: url("../images/Birthday1.jpeg");
  }
 
-#london {
-  background: url("../images/London.JPG")
+#london1 {
+  background: url("../images/London.JPG");
 }
 
-#redhead {
-  background: url("../images/redhead.jpg")
+#redhead1 {
+  background: url("../images/redhead.jpg");
 }
 
+#birthday2 {
+   background: url("../images/Birthday1.jpeg");
+ }
 
+#london2 {
+  background: url("../images/London.JPG");
+}
+
+#redhead2 {
+  background: url("../images/redhead.jpg");
+}
+/****************
+HOME PAGE FOOTER
+*****************/
 
 footer {
-  background: black;
+  background: white;
+  width: 100%;
+  height: 100px;
+  border-top: 2px solid black;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.social li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin: 40px;
+}
+
+.social img {
+  height: 40px;
+  width: 40px;
+  /*margin-left: 20px;
+  margin-right: 60px;*/
+}
+
+.instagram-feed {
+  width: 100%;
+  /*height: 200px;*/
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.instagram-feed h3 {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.instagram-feed iframe {
+  width: 100%;
+}
+
+.info {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding-bottom: 30px;*/
+  /*padding-top: 5px;*/
+
+}
+
+.info h3 {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  clear: both;
+  width: 100%;
+  padding-bottom: 20px;
+
+}
+
+footer p {
+  color: black;
+  font-family: "Jenna Sue", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 24px;
+}
+
+.copyright #created-by {
+  color: black;
+  font-family: "Jenna Sue", sans-serif;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 24px;
+}
+
+/***************************
+BLOG PAGE 1 - KENWOOD HOUSE
+***************************/
+
+/************************
+WRAPPER OF MAIN POST BODY
+*************************/
+
+.wrappost-1 {
   width: 960px;
+  margin: 30px auto 100px auto;
+}
+
+/************************
+POST BODY - KENWOOD HOUSE
+*************************/
+
+.postkenwood {
+  width: 960px;
+}
+
+.postkenwood h2 {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Jenna Sue", sans-serif;
+  font-size: 36px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.main-image-kenwood {
+  width: 960px;
+}
+
+.postkenwood p {
+  color: black;
+  font-family: "Josefin Sans", cursive;
+  font-size: 24px;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+}
+
+.two-images-1 {
+  width: 960px;
+  height: 330px;
+  margin-top: 20px;
+}
+
+  .img-left-1 {
+    float: left;
+    width: 49%;
+    margin-right: 2%
+  }
+
+  .img-right-1 {
+    float: right;
+    width: 49%;
+  }
+
+.two-images-2 {
+  width: 960px;
+  height: 700px;
+}
+
+  .img-left-2 {
+    float: left;
+    width: 49%;
+    margin-right: 2%
+  }
+
+  .img-right-2 {
+    float: right;
+    width: 49%;
+  }
+
+.two-images-3 {
+  width: 960px;
+  margin-top: 20px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+  .img-left-3 {
+    float: left;
+    width: 49%;
+    margin-right: 2%
+  }
+
+  .img-right-3 {
+    float: right;
+    width: 49%;
+  }
+
+.out-links {
+  text-decoration: none;
+  color: #54C0B7;
+  font-weight: bold;
+}
+
+.out-links:hover {
+  color: #cf5d3c;
+}
+
+
+/**********
+TRENDS PAGE
+***********/
+
+.wrapper-trends-page {
+  width: 100%;
+  height: 750px;
+}
+
+.trends {
+  clear: both;
+  width: 100%;
   height: 100px;
   margin: 0 auto;
 }
 
-footer p {
-  color: white;
+.trends h1 {
+  width: 100%;
+  font-size: 90px;
   font-family: "Jenna Sue", sans-serif;
-  text-align: left;
-  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.trend-post {
+  width: 100%;
+  height: 300px;
+  /*border-top: 1px black solid;*/
+  border-bottom: 1px black solid;
+  padding-top: 80px;
+}
+
+.trend-main-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.trend-main-title a {
+  color: black;
+  font-size: 80px;
+  font-family: "Jenna Sue", sans-serif;
+  text-decoration: none;
+}
+
+.trend-main-title h3 {
+  font-family: "Josefin Sans", cursive;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read-more-title .read-more-button {
+  margin: 0 auto;
+  border: 2px black solid;
+  background: none;
+  height: 35px;
+  width: 120px;
+}
+
+.read-more-button a {
+  font-size: 18px;
+  color: black;
+  font-family: "Josefin Sans", cursive;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+/*********************
+    ABOUT PAGE
+**********************/
+
+.wrappost-2 {
+  width: 960px;
+  margin: 30px auto 100px auto;
+}
+
+.wrappost-2 h1 {
+  font-size: 60px;
+  font-family: "Jenna Sue", sans-serif;
+  text-align: center;
+  margin: 40px auto;
+  float: none;
+}
+
+.about-photo {
+  max-width: 960px;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.wrappost-2 p {
+  color: black;
+  font-family: "Josefin Sans", cursive;
   font-size: 24px;
+  line-height: 1.5;
+  padding-top: 30px;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+/*********************
+    CONTACT PAGE
+**********************/
+
+.get-in-touch {
+  width: 100%;
+  font-size: 60px;
+  font-family: "Jenna Sue", sans-serif;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.form {
+  width: 100%;
+  margin: 30px 0 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form {
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  color: black;
+  font-size: 48px;
+  font-family: "Jenna Sue", sans-serif;
+  margin: 20px 0;
+
+}
+
+input {
+  font-size: 18px;
+  color: black;
+  font-family: "Josefin Sans", cursive;
+}
+
+input:focus {
+  background: #54C0B7;
+  opacity: 0.7;
+}
+
+.contact {
+  display: block;
+  width: 400px;
+  height: 35px;
+  border: 1px solid black;
+}
+
+#message {
+  display: block;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: justify;
+}
+
+.contact-submit {
+  display: block;
+  width: 300px;
+  height: 35px;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.contact-submit:hover {
+  background: #54C0B7;
+}
+
+.contact-submit a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-family: "Jenna Sue", sans-serif;
+
+}
+
+.media-kit {
+  width: 100%;
+  font-size: 60px;
+  font-family: "Jenna Sue", sans-serif;
+  margin: 30px auto;
+  text-decoration: none;
+  color: black;
+}
+
+.media-kit:hover {
+  color: #54C0B7;
+}
+
+.media-kit-line {
+  text-align: center;
+  margin: 30px 0;
 }

@@ -5,73 +5,176 @@
     <title>The London Ginger</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.css">
   </head>
   <body>
     <header>
-      <h1>The London Ginger</h1>
+      <h1>The London Ginger</h1>   <!--Beginning of main menu-->
       <nav class="mainmenu">
-          <a href="#">Home</a>
-        <div class="language-select">
-          <a href="#">English</a>
-            <!-- <li><a href="#">Trends / Lifestyle</a></li> -->
-            <!-- <li><a href="#">Lifestyle</a></li> -->
-        </div>
-        <div class="language-select">
-          <a href="#">Portugues</a>
-            <!-- <li><a href="#">Tendencia / Estilo de vida</a></li> -->
-            <!-- <li><a href="#">Estilo de vida</a></li> -->
-        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="lifestyle.html">Lifestyle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
+
     </header>
 
-    <div class="info">
-      <div class="social-1">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </div>
+      <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": true, "resize": true}'>
+        <div class="gallery-cell">
+          <div class="logo-front">
+            <img src="images/Logo_The_London_Ginger.png" alt="logo" />
+          </div>
+        </div>
+        <div class="gallery-cell" id="kenwood">
+          <div class="main-title">
+            <a href="#">Kenwood House</a>
+          </div>
+          <div class="read-more-title">
+            <button type="button" name="Read-more" class="read-more-button"><a href="#">Read More</a></button>
+          </div>
+        </div>
+        <div class="gallery-cell" id="polpo">
+          <div class="main-title">
+            <a href="#">Polpo</a>
+          </div>
+          <div class="read-more-title">
+            <button type="button" name="Read-more" class="read-more-button"><a href="#">Read More</a></button>
+          </div>
+        </div>
+        <div class="gallery-cell" id="london">
+          <div class="main-title">
+            <a href="#">London</a>
+          </div>
+          <div class="read-more-title">
+            <button type="button" name="Read-more" class="read-more-button"><a href="#">Read More</a></button>
+          </div>
+        </div>
+     </div>
 
-      <div class="social-2">
-        <a href="#" id="facebook"><img src="images/Facebook.png" alt="" /></a>
-        <a href="#" id="instagram"><img src="images/Instagram.png" alt="" /></a>
-        <a href="#" id="snapchat"><img src="images/Snapchat.png" alt="" /></a>
-        <a href="#" id="twitter"><img src="images/Twitter.png" alt="" /></a>
-      </div>
-   </div>
-    <div class="logo">
-      <img src="images/Logo_The_London_Ginger.png" alt="" />
-    </div>
-
-    <div class="feature">
-      <a href="#">Feature</a>
-    </div>
-
-    <div class="section-1">
-      <div class="blogpost-1" id="kenwood">
-        <a href="#" class="postlink">Kenwood House</a>
-      </div>
-      <div class="blogpost-1" id="polpo">
-        <a href="#" class="postlink">Polpo</a>
-      </div>
-      <div class="blogpost-1" id="rose">
-        <a href="#" class="postlink">Rose Quartz</a>
-      </div>
-    </div>
-    <div class="section-2">
-      <div class="blogpost-2" id="birthday">
-        <a href="#" class="postlink">Birthday</a>
-      </div>
-      <div class="blogpost-2" id="london">
-        <a href="#" class="postlink">London</a>
-      </div>
-      <div class="blogpost-2" id="redhead">
-        <a href="#" class="postlink">Redhead Day</a>
+     <div class="wrapper-main-page">
+      <div class="section-blocks"> <!--Section 1-->
+        <div class="blogpost-box">
+          <div class="blogpost-image" id="kenwood1">
+            <a href="blog1.html" class="postlink">Kenwood House</a>
+          </div>
+          <div class="summary">
+            <p>
+               Kenwood House and Gardens is located in the heart of Hampstead Heath...
+            </p>
+          </div>
+        </div>
+          <div class="blogpost-box">
+            <div class="blogpost-image" id="polpo1">
+              <a href="#" class="postlink">Polpo</a>
+            </div>
+            <div class="summary">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+              </p>
+            </div>
+          </div>
+        <div class="blogpost-box">
+          <div class="blogpost-image" id="rose1">
+            <a href="#" class="postlink">Rose Quartz</a>
+         </div>
+         <div class="summary">
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+           </p>
+        </div>
       </div>
     </div>
-
+    <div class="section-blocks"> <!--Section 2-->
+      <div class="blogpost-box">
+        <div class="blogpost-image" id="birthday1">
+          <a href="blog1.html" class="postlink">Kenwood House</a>
+        </div>
+        <div class="summary">
+          <p>
+             Kenwood House and Gardens is located in the heart of Hampstead Heath...
+          </p>
+        </div>
+      </div>
+        <div class="blogpost-box">
+          <div class="blogpost-image" id="london1">
+            <a href="#" class="postlink">Polpo</a>
+          </div>
+          <div class="summary">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            </p>
+          </div>
+        </div>
+      <div class="blogpost-box">
+        <div class="blogpost-image" id="redhead1">
+          <a href="#" class="postlink">Rose Quartz</a>
+       </div>
+       <div class="summary">
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+         </p>
+      </div>
+    </div>
+  </div>
+  <div class="section-blocks"> <!--Section 3-->
+    <div class="blogpost-box">
+      <div class="blogpost-image" id="birthday2">
+        <a href="blog1.html" class="postlink">Kenwood House</a>
+      </div>
+      <div class="summary">
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+        </p>
+      </div>
+    </div>
+      <div class="blogpost-box">
+        <div class="blogpost-image" id="london2">
+          <a href="#" class="postlink">Polpo</a>
+        </div>
+        <div class="summary">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+          </p>
+        </div>
+      </div>
+      <div class="blogpost-box">
+        <div class="blogpost-image" id="redhead2">
+          <a href="#" class="postlink">Rose Quartz</a>
+        </div>
+        <div class="summary">
+       <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+       </p>
+        </div>
+      </div>
+    </div>
+  </div>
     <footer>
-      <p>
-        &copy The London Ginger
-      </p>
-    </footer>
+      <div class="instagram-feed">
+        <h3>Instagram @QuelSol</h3>
+        <!-- SnapWidget -->
+          <script src="http://snapwidget.com/js/snapwidget.js"></script>
+          <iframe src="http://snapwidget.com/in/?u=cXVlbHNvbHxpbnw3MHw1fDF8fG5vfDV8bm9uZXxvblN0YXJ0fHllc3x5ZXM=&ve=021115" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="info">
+        <h3>Follow:</h3>
+        <div class="social">
+          <li><a href="#" id="facebook"><img src="images/Facebook.png" alt="" /></a></li>
+          <li><a href="#" id="instagram"><img src="images/Instagram.png" alt="" /></a></li>
+          <li><a href="#" id="snapchat"><img src="images/Snapchat.png" alt="" /></a></li>
+          <li><a href="#" id="twitter"><img src="images/Twitter.png" alt="" /></a></li>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy The London Ginger 2015</p>
+        <p id="created-by">Created and developed by The Bucket List</p>
+      </div>
+     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.pkgd.js"></script>
   </body>
 </html>
