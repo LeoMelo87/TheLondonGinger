@@ -13,7 +13,7 @@ HOME PAGE
 
 header {
   border-bottom: 2px solid black;
-  height: 250px;
+  height: 280px;
   width: 100%;
   margin: 0 auto;
   background: white;
@@ -29,17 +29,34 @@ h1 {
   font-size: 48px;
   font-family: "Jenna Sue", sans-serif;
   margin: 20px auto;
-  float: none;
+  /*float: none;*/
   text-align: center;
   /*clear: both;*/
-  /*float: left;*/
-  /*width: 30%;*/
+  float: left;
+  width: 70%;
   /*margin-top: 20px;
   padding-left: 25px;*/
   /*text-align: left;*/
 }
 
+.hamb-menu {
+  float: right;
+  width: 20%;
+}
+
+img {
+  width: 40px;
+  margin: 20px auto;
+}
+
+button {
+  border: none;
+  background: white;
+
+}
+
 .mainmenu ul {
+  clear: both;
   float: none;
   margin: 0 auto;
   /*float: right;
@@ -47,6 +64,7 @@ h1 {
   /*text-align: right;*/
   /*margin-top: 40px;
   padding-left: 50px;*/
+
 }
 
 .mainmenu li {
@@ -80,8 +98,8 @@ MAIN LOGO - CAROUSEL OF IMAGES
 }
 
 .gallery-cell .logo-front img {
-  max-width: 77%;
-  max-height: 77%;
+  max-width: 67%;
+  max-height: 67%;
   display: block;
   margin: 0 auto;
   }
