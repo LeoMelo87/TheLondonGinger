@@ -2,19 +2,11 @@
 MOBILE VIEW
 ***********/
 
-@@font-face {
-<<<<<<< HEAD
-  font-family: "Jenna Sue";
-  src: url("fonts/JennaSue 3.ttf");
-}
-=======
-  font-family: "Jenna Sue"
-  src: url("fonts/JennaSue.ttf") format ('truetype');
->>>>>>> master
 
 * {
   box-sizing: border-box;
 }
+
 
 /*********
 HOME PAGE
