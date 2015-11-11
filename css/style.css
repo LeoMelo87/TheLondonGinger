@@ -3,6 +3,10 @@ MOBILE VIEW
 ***********/
 
 
+@font-face {
+  font-family: "Jenna Sue"
+  src: url("fonts/JennaSue.ttf") format ('truetype');
+}
 * {
   box-sizing: border-box;
 }
