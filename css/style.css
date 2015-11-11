@@ -2,6 +2,10 @@
 MOBILE VIEW
 ***********/
 
+@@font-face {
+  font-family: "Jenna Sue";
+  src: url("fonts/JennaSue 3.ttf");
+}
 
 * {
   box-sizing: border-box;
@@ -52,18 +56,18 @@ img {
 button {
   border: none;
   background: white;
-
+  height: 50px;
 }
 
 .mainmenu ul {
   clear: both;
-  float: none;
+  /*float: none;*/
   margin: 0 auto;
   /*float: right;
   width: 70%;*/
   /*text-align: right;*/
-  /*margin-top: 40px;
-  padding-left: 50px;*/
+  /*margin-top: 40px;*/
+  /*padding-left: 50px;*/
 
 }
 
@@ -98,8 +102,8 @@ MAIN LOGO - CAROUSEL OF IMAGES
 }
 
 .gallery-cell .logo-front img {
-  max-width: 67%;
-  max-height: 67%;
+  width: 60%;
+  height: 60%;
   display: block;
   margin: 0 auto;
   }
@@ -173,20 +177,20 @@ MAIN LOGO - CAROUSEL OF IMAGES
   background: url("../images/redhead.jpg")
 }
 
-/*.logo {*/
-  /*clear: both;*/
-  /*height: 500px;
+.logo {
+  clear: both;
+  height: 500px;
   width: 960px;
   background: #54C0B7;
   margin: 10px auto;
-}*/
+}
 
-  /*.logo img {
+  .logo img {
   max-width: 90%;
   max-height: 90%;
   display: block;
   margin: 0 auto;
-  }*/
+  }
 
 
 /*********************
@@ -769,7 +773,25 @@ DESKTOP VIEW
     text-align: left;
   }
 
+  .hamb-menu {
+    clear: both;
+    display: none;
+  }
+
+  img {
+    width: 40px;
+    margin: 20px auto;
+  }
+
+  button {
+    border: none;
+    background: white;
+    height: 50px;
+    display: none;
+  }
+
   .mainmenu ul {
+    clear: none;
     float: right;
     width: 70%;
     text-align: right;
@@ -797,6 +819,7 @@ DESKTOP VIEW
   /*******************************************
   MAIN LOGO - CAROUSEL OF IMAGES
   *******************************************/
+
   .gallery-cell {
     width: 100%;
     height: 500px;
@@ -806,15 +829,15 @@ DESKTOP VIEW
   }
 
   .gallery-cell .logo-front img {
-    max-width: 57%;
-    max-height: 57%;
+    max-width: 90%;
+    max-height: 90%;
     display: block;
     margin: 0 auto;
   }
 
   .main-title {
     /*text-align: center;*/
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     height: 200px;
     display: flex;
     align-items: center;
@@ -880,20 +903,20 @@ DESKTOP VIEW
     background: url("../images/redhead.jpg")
   }
 
-  /*.logo {*/
-    /*float: none;*/
-    /*height: 500px;
+  .logo {
+    float: none;
+    height: 500px;
     width: 960px;
     background: #54C0B7;
     margin: 10px auto;
-  }*/
+  }
 
-    /*.logo img {
+    .logo img {
     max-width: 90%;
     max-height: 90%;
     display: block;
     margin: 0 auto;
-    }*/
+    }
 
 
   /*********************
